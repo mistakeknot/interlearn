@@ -1,0 +1,21 @@
+{
+  "name": "interlearn",
+  "version": "0.1.0",
+  "description": "Cross-repo institutional knowledge index — indexes solution docs across the Interverse monorepo, enables unified search, and audits reflect coverage.",
+  "author": {
+    "name": "MK",
+    "email": "mistakeknot@vibeguider.org"
+  },
+  "repository": "https://github.com/mistakeknot/interlearn",
+  "license": "MIT",
+  "keywords": [
+    "knowledge",
+    "solutions",
+    "institutional-memory",
+    "cross-repo",
+    "index"
+  ],
+  "skills": [
+    "./skills/interlearn"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "ecosystem": "interverse",
+  "interbase_min_version": "1.0.0",
+  "ecosystem_only": false,
+  "standalone_features": [
+    "Cross-repo solution doc indexing (INDEX.md + index.json)",
+    "Full-text search across all solution docs",
+    "Reflect coverage audit against closed beads"
+  ],
+  "integrated_features": [
+    { "feature": "Review findings cross-referenced with existing learnings", "requires": "interflux" },
+    { "feature": "Ambient discovery of related lessons during work", "requires": "interject" }
+  ],
+  "companions": {
+    "recommended": [],
+    "optional": ["interflux", "interject"]
+  }
+}
