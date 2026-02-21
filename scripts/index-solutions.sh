@@ -116,7 +116,7 @@ parse_frontmatter() {
                 tags="$(echo "$tags_value" | tr -d '[]"' | sed 's/, */,/g')"
             elif [ -z "$tags_value" ]; then
                 # Multi-line format: collect indented "  - item" lines
-                tags="$(echo "$frontmatter" | awk '/^tags:/{found=1; next} found && /^  - /{sub(/^  - */, ""); gsub(/"/, ""); items = items ? items "," $0 : $0} found && !/^  - /{exit} END{print items}')"
+                tags="$(echo "$frontmatter" | awk '/^tags:/{found=1; next} found && /^  - /{sub(/^  - */, ""); gsub(/"/, ""); items = items ? items "," $0 : $0; next} found && !/^  - /{exit} END{print items}')"
             fi
         fi
 
