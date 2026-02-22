@@ -17,5 +17,6 @@
   ],
   "skills": [
     "./skills/interlearn"
-  ]
+  ],
+  "hooks": "./hooks/hooks.json"
 }
