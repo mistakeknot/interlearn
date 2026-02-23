@@ -1,0 +1,19 @@
+{
+  "module_summary": "Interlearn indexes cross-repo solution documents and provides search and audit capabilities for institutional knowledge reuse.",
+  "roadmap": {
+    "now": [
+      {"id": "ILRN-N1", "title": "Harden indexing robustness for inconsistent frontmatter and malformed markdown.", "priority": "P1"},
+      {"id": "ILRN-N2", "title": "Improve audit signal quality so coverage gaps are high-confidence.", "priority": "P2"}
+    ],
+    "next": [
+      {"id": "ILRN-N3", "title": "Improve search ranking quality for practical debugging and implementation queries.", "priority": "P2"},
+      {"id": "ILRN-N4", "title": "Refine metadata taxonomy across category, tags, and module attribution fields.", "priority": "P2"},
+      {"id": "ILRN-N5", "title": "Integrate with review and planning workflows to surface indexed knowledge proactively.", "priority": "P2"}
+    ],
+    "later": [
+      {"id": "ILRN-L1", "title": "Add feedback loops for low-value hits to iteratively improve ranking.", "priority": "P3"},
+      {"id": "ILRN-L2", "title": "Track reuse impact metrics across modules and sprint cycles.", "priority": "P3"},
+      {"id": "ILRN-L3", "title": "Package compact context bundles for downstream agents and tooling.", "priority": "P3"}
+    ]
+  }
+}
