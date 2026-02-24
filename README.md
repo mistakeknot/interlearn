@@ -25,10 +25,16 @@ The design philosophy is straightforward: deterministic artifacts, path-derived 
 
 ## Getting Started
 
-Install from the interagency marketplace:
+First, add the [interagency marketplace](https://github.com/mistakeknot/interagency-marketplace) (one-time setup):
 
 ```bash
-claude plugins install interlearn@interagency-marketplace
+/plugin marketplace add mistakeknot/interagency-marketplace
+```
+
+Then install the plugin:
+
+```bash
+/plugin install interlearn
 ```
 
 Then:
