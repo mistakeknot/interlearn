@@ -2,13 +2,13 @@
 
 A Claude Code plugin that turns "this was solved before" from folklore into something you can actually query.
 
-## What This Is
+## What this Is
 
 Every repo accumulates hard-won fixes in `docs/solutions/` and then quietly forgets they exist. interlearn is the memory layer for that problem. It builds a cross-repo index of solution docs, gives you a fast search surface, and audits whether closed work actually left behind useful documentation.
 
 If interflux is your reviewer and interpath is your artifact generator, interlearn is the institutional memory that keeps both from reinventing the same lessons every two weeks.
 
-## How It Works
+## How it works
 
 interlearn is intentionally simple: one indexing script, one skill, one hook.
 
@@ -23,7 +23,7 @@ interlearn is intentionally simple: one indexing script, one skill, one hook.
 
 The design philosophy is straightforward: deterministic artifacts, path-derived module truth, and no hidden mutation.
 
-## Getting Started
+## Getting started
 
 First, add the [interagency marketplace](https://github.com/mistakeknot/interagency-marketplace) (one-time setup):
 
@@ -55,7 +55,7 @@ hooks/hooks.json             -> SessionEnd hook registration
 hooks/session-end.sh         -> background index refresh trigger
 ```
 
-## Design Decisions
+## Design decisions
 
 A few choices are deliberate:
 
@@ -65,10 +65,10 @@ A few choices are deliberate:
 - **Fail-open hook behavior.** Session teardown should never fail because indexing failed.
 - **No auto-commit.** interlearn writes artifacts; humans decide when to commit them.
 
-## Current Scope
+## Current scope
 
 Right now the skill and hook target the Interverse monorepo path conventions (`/root/projects/Interverse`). That's intentional for operational reliability in the current environment.
 
-## What's Next
+## What's next
 
 Improved ranking heuristics, stronger coverage auditing, and tighter integration with planning/review workflows so relevant prior fixes are surfaced before new work drifts into duplicate effort.
