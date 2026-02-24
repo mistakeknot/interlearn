@@ -1,6 +1,6 @@
 # interlearn
 
-A Claude Code plugin that turns "we solved this before" from folklore into something you can actually query.
+A Claude Code plugin that turns "this was solved before" from folklore into something you can actually query.
 
 ## What This Is
 
