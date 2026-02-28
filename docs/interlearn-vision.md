@@ -25,6 +25,7 @@ interlearn currently provides:
 - Improve relevance and retrieval quality for practical reuse during active coding sessions.
 - Expand coverage checks so solved incidents are consistently captured in the index.
 - Keep indexing lightweight, deterministic, and safe for routine session workflows.
+- Address knowledge staleness: solutions that no longer apply are worse than missing solutions. Stale entries should be detectable (date, changed dependencies, superseded patterns) and flagged or pruned rather than silently served.
 
 ## Design Principles
 
@@ -32,3 +33,4 @@ interlearn currently provides:
 - Keep generated artifacts easy to inspect and diff.
 - Preserve portability: shell-first, no heavyweight runtime dependency.
 - Make cross-repo learning a default behavior, not an optional afterthought.
+- Indexed knowledge must carry provenance: source module, date, and context. Without attribution, reused solutions risk reinforcing prior assumptions rather than enabling independent validation (PHILOSOPHY.md: learning is valuable only with provenance).
