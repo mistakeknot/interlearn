@@ -1,0 +1,26 @@
+{
+  "name": "interlearn",
+  "version": "0.1.0",
+  "description": "Cross-repo institutional knowledge index — indexes solution docs across the Interverse monorepo, enables unified search, and audits reflect coverage.",
+  "license": "MIT",
+  "keywords": [
+    "knowledge",
+    "solutions",
+    "institutional-memory",
+    "cross-repo",
+    "index"
+  ],
+  "author": "MK",
+  "interface": {
+    "displayName": "interlearn",
+    "shortDescription": "Cross-repo institutional knowledge index — indexes solution docs across the Interverse monorepo, enables unified sear..."
+  },
+  "skills": "./skills/",
+  "hooks": [
+    {
+      "event": "SessionEnd",
+      "command": "${KIMI_PLUGIN_ROOT}/hooks/session-end.sh",
+      "timeout": 10
+    }
+  ]
+}
