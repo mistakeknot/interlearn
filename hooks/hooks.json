@@ -6,7 +6,8 @@
           {
             "type": "command",
             "command": "${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh",
-            "timeout": 10
+            "timeout": 10,
+            "args": []
           }
         ]
       }
