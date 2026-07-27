@@ -1,6 +1,6 @@
 {
   "name": "interlearn",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cross-repo institutional knowledge index — indexes solution docs across the Interverse monorepo, enables unified search, and audits reflect coverage.",
   "license": "MIT",
   "keywords": [
